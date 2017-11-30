@@ -1,0 +1,5 @@
+- name: ClamAV
+  homebrew: name=clamav state=present
+
+- name: RKHunter
+  homebrew: name=rkhunter state=present

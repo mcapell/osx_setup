@@ -1,0 +1,8 @@
+- name: Alfred
+  homebrew_cask: name=alfred state=present
+
+- name: Thunderdbird
+  homebrew_cask: name=thunderbird state=present
+
+- name: Firefox
+  homebrew_cask: name=firefox state=present

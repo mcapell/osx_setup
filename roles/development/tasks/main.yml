@@ -1,0 +1,50 @@
+# Cask packages
+# - name: iTerm2
+#   homebrew_cask: name=iterm2 state=present
+
+# Homebrew packages
+- name: Vim
+  homebrew: name=vim state=present
+
+- name: git
+  homebrew: name=git state=present
+
+- name: htop
+  homebrew: name=htop state=present
+
+- name: tmux
+  homebrew: name=tmux state=present
+
+- name: ctags
+  homebrew: name=ctags state=present
+
+- name: figlet
+  homebrew: name=figlet state=present
+
+# ls fast alternative
+- name: fd
+  homebrew: name=fd state=present
+
+- name: tree
+  homebrew: name=tree state=present
+
+- name: The Silver Searcher (ag)
+  homebrew: name=the_silver_searcher state=present
+
+- name: YouTube DL
+  homebrew: name=youtube-dl state=present
+
+- name: wget
+  homebrew: name=wget state=present
+
+- name: Terraform
+  homebrew: name=terraform state=present
+
+- name: PlantUML
+  homebrew: name=plantuml state=present
+
+- name: grep
+  homebrew: name=grep state=present
+
+- name: keybase
+  homebrew: name=keybase state=present

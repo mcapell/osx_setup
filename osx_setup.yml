@@ -1,0 +1,21 @@
+- hosts: all
+  vars:
+    home_dir: "{{ lookup('env', 'HOME') }}"
+    apps_dir: "{{ home_dir }}/Library/Application Support/"
+  tasks:
+    - name: Ensure homebrew is installed
+      shell: which brew
+      register: brew_installed
+      ignore_errors: True
+
+    - name: install homebrew with curl
+      shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      when: brew_installed.rc == 1
+
+    - name: Install Homebrew Cask
+      homebrew: name=cask state=present
+
+  roles:
+    - { role: development }
+    - { role: security }
+    #- { role: productivity }
